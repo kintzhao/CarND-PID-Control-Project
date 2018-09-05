@@ -1,0 +1,9 @@
+1. describes the effect of the P, I, D component of the PID algorithm
+
+ P : improve the main error between the real and target, if big will shock around the taget, if small will deviate from the target
+ I :  decrease the error for controller
+ D:  avoid change too faster, make it more soomth.
+
+2 discusses how they chose the final hyperparameters (P, I, D coefficients)
+
+  first decide the param K, make it run quickly keep safe and fine; then try to select D to avoid turn too quickly at  tuning lane; at last, improve the I to decrase the error, make run more smooth
